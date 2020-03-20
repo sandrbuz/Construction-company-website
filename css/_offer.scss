@@ -1,0 +1,211 @@
+@import "fonts";
+
+.offer {
+  background: url("../img/offer-background.png") no-repeat;
+  background-position: right top;
+  background-size: 50% 100%;
+}
+.offer-container {
+  max-width: 1170px;
+  margin: auto;
+}
+
+.offer-block {
+  width: 50%;
+  padding: 80px 0;
+}
+.offer-title {
+  margin-bottom: 30px;
+  width: 350px;
+  font-size: 24px;
+  @include bold();
+}
+.offer-subtitle {
+  display: block;
+  margin-bottom: 30px;
+  width: 250px;
+  font-size: 16px;
+  @include reg();
+}
+.inputs {
+  margin-bottom: 30px;
+}
+.offer-input {
+  padding: 26px 25px 26px 26px;
+  border-radius: 10px;
+  border: 1px solid #dddddd;
+  color: green;
+
+  font-size: 15px;
+  // max-width: 240px;
+  // height: 66px;
+  padding-left: 26px;
+}
+input::placeholder {
+  color: #bfbfbf;
+}
+
+.offer-call {
+  margin-left: 20px;
+}
+.offer-button {
+  margin-bottom: 30px;
+  padding: 27px 102px;
+  border: none;
+  border-radius: 10px;
+  background: #ffd200;
+  font-size: 16px;
+  @include bold();
+}
+.bottom-offer {
+  display: flex;
+  align-items: center;
+}
+.feedback {
+  width: 230px;
+  font-size: 15px;
+  @include reg();
+}
+.call {
+  margin-left: 40px;
+  font-size: 15px;
+  // width: 200px;
+}
+.call-text {
+  @include reg();
+}
+.call-number {
+  @include bold();
+  text-decoration: none;
+  color: black;
+}
+@media (max-width: 1200px) {
+  .offer {
+    background: none;
+  }
+  .offer-container {
+    max-width: 1000px;
+  }
+  .offer-block {
+    width: 100%;
+    padding: 50px 0;
+  }
+  .offer-title {
+    width: 100%;
+  }
+  .offer-subtitle {
+    width: 100%;
+  }
+  .inputs {
+    display: flex;
+    justify-content: space-between;
+  }
+  .offer-input {
+    width: 450px;
+  }
+  .offer-button {
+    // width: 1000px;
+    padding: 27px 353px;
+  }
+  .bottom-offer {
+    justify-content: space-between;
+  }
+}
+@media (max-width: 1025px) {
+  .offer-container {
+    max-width: 900px;
+  }
+  .offer-button {
+    // width: 900px;
+    padding: 27px 302px;
+  }
+}
+@media (max-width: 955px) {
+  .offer-container {
+    max-width: 800px;
+  }
+  .offer-button {
+    // width: 800px;
+    padding: 27px 253px;
+  }
+}
+@media (max-width: 800px) {
+  .offer-container {
+    width: 700px;
+  }
+  .offer-block {
+    justify-content: center;
+  }
+  .offer-button {
+    padding: 27px 203px;
+    // width: 700px;
+    // margin: 0 35px;
+  }
+}
+@media (max-width: 768px) {
+  .offer-container {
+    width: 600px;
+  }
+  .offer-button {
+    padding: 27px 152px;
+  }
+}
+@media (max-width: 600px) {
+  .offer-container {
+    width: 400px;
+  }
+  .offer-button {
+    padding: 27px 53px;
+  }
+  .inputs {
+    flex-direction: column;
+  }
+  .offer-input {
+    padding: 25px 25px;
+    width: 400px;
+    margin: 0;
+  }
+  .offer-name {
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 400px) {
+  .offer-container {
+    width: 300px;
+  }
+  .offer-input {
+    padding: 27px;
+    width: 300px;
+  }
+  .bottom-offer {
+    flex-direction: column;
+    margin-left: -60px;
+  }
+  .call {
+    margin-top: 20px;
+    margin-left: -40px;
+  }
+  .offer-call {
+    margin-bottom: -20px;
+  }
+}
+@media (max-width: 360px) {
+  .offer-container {
+    width: 300px;
+  }
+}
+@media (max-width: 320px) {
+  .offer-container {
+    width: 250px;
+  }
+  .bottom-offer {
+    margin-left: 0px;
+  }
+  .offer-button {
+    font-size: 14px;
+    padding: 20px 30px;
+  }
+  .offer-input {
+    width: 250px;
+  }
+}

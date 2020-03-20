@@ -1,0 +1,144 @@
+@import "fonts";
+.hero-container {
+  max-width: 1170px;
+  margin: auto;
+}
+
+.hero {
+  background: #f5f5f5;
+}
+.hero-list_item {
+  list-style-type: none;
+}
+.hero-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0;
+}
+.hero-image {
+  width: 570px;
+  height: 488px;
+}
+.hero-block_title {
+  margin-bottom: 45px;
+  font-size: 41px;
+  @include bold();
+}
+.hero-block_subtitle {
+  margin-bottom: 40px;
+  font-size: 20px;
+  @include bold();
+}
+.hero-list_item {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  @include reg();
+}
+.hero-list_image {
+  //  margin-right: 25px;
+  padding: 10px;
+
+  //  width: 20px;
+  //  height: 20px;
+  border: 1px solid #ffd200;
+  border-radius: 50%;
+}
+.hero-block_left {
+  display: flex;
+  flex-direction: column;
+}
+.hero-list_text {
+  margin-left: 30px;
+  display: block;
+}
+.hero-list_text2 {
+  width: 200px;
+}
+.hero-list_text3 {
+  width: 250px;
+}
+
+@media (max-width: 1200px) {
+  .hero-container {
+    max-width: 1000px;
+  }
+}
+@media (max-width: 1025px) {
+  .hero-container {
+    max-width: 900px;
+  }
+}
+@media(max-width:800px){
+  .hero-container{
+  width: 700px;
+  }
+}
+@media (max-width: 955px) {
+  .hero-container {
+    max-width: 800px;
+  }
+  .hero-image {
+    width: 400px;
+    height: auto;
+  }
+}
+@media (max-width: 768px) {
+  .hero-list_text {
+    width: auto;
+    font-size: 15px;
+  }
+  .hero-image {
+    width: 600px;
+  }
+  .hero-block {
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero-block_left {
+    align-items: center;
+  }
+  .hero-block_title {
+    margin-left: 30px;
+  }
+  .hero-block_subtitle {
+    margin-right: 60px;
+  }
+  .hero-container {
+    max-width: 600px;
+  }
+}
+@media (max-width: 600px) {
+  .hero-container {
+    max-width: 300px;
+  }
+
+  .hero-image {
+    width: 400px;
+  }
+  .hero-block_title {
+    font-size: 23px;
+    margin-left: 0;
+  }
+  .hero-block_subtitle {
+    font-size: 14px;
+  }
+}
+@media (max-width: 400px) {
+  .hero-image {
+    width: 300px;
+  }
+}
+@media (max-width: 320px) {
+  .hero-container {
+    max-width: 250px;
+  }
+  .hero-image {
+    width: 250px;
+  }
+  .hero-list_text{
+    margin-left: 10px;
+  }
+}
