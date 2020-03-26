@@ -1,0 +1,32 @@
+.price__container{
+    max-width: 1170px;
+    margin: auto;
+    .titles {
+        text-align: center;
+    }
+    .price__title {
+     @include bold ();
+     font-size: 30px;
+     width: 520px;
+     margin: auto;
+     margin-top: 100px;
+    }
+    .price__subtitle{
+        margin-top: 60px;
+        @include reg();
+        font-size: 20px;
+        margin-bottom: 60px;
+    }
+    .cards{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .card{
+            margin-bottom: 30px;
+            .card__text{
+                font-size: 18px;
+            }
+        }
+    }
+}
+

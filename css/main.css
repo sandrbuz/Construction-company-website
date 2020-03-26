@@ -312,6 +312,51 @@
   }
 }
 
+.price__container {
+  max-width: 1170px;
+  margin: auto;
+}
+
+.price__container .titles {
+  text-align: center;
+}
+
+.price__container .price__title {
+  font-family: "Museo Sans Bold", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  width: 520px;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.price__container .price__subtitle {
+  margin-top: 60px;
+  font-family: "Museo Sans light", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  margin-bottom: 60px;
+}
+
+.price__container .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.price__container .cards .card {
+  margin-bottom: 30px;
+}
+
+.price__container .cards .card .card__text {
+  font-size: 18px;
+}
+
 @font-face {
   font-family: "Museo Sans Light";
   src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.eot");
