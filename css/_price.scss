@@ -24,6 +24,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+       
         
         .card__texts{
             text-align: center;
@@ -37,6 +38,7 @@
             margin-bottom: 40px;
             color: #000;
             position: relative;
+            
             // border-bottom: 3px solid #ffd200;
           
            
@@ -59,6 +61,7 @@
 .find:hover:after{
     height: 13px;
     z-index: -1;
+    transition: 0.2s;
 }
 
 .find:after{
@@ -74,4 +77,33 @@
 }
 .card:hover{
     box-shadow: 0 10px 20px 0px #d9d7d7;
+    transition: 0.2s;
 }
+.card:hover{
+    .price_image{
+        box-shadow: 0 10px 30px 0px #d9d7d7;
+        transition: 0.2s;
+    }
+    .price_image:before{
+        opacity: 1;
+    }
+    
+}
+.price_image{
+    position: relative;
+   
+}
+.price_image:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, #ffd200 0%, rgba(255, 255, 255, 0) 100%);
+    opacity: 0;
+    transition: 0.2s;
+}
+
+
+      
