@@ -50,3 +50,5 @@ $('.sl').slick({
      
     ]
   });
+  // Библиотека wow.js
+  new WOW().init();

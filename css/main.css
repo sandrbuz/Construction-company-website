@@ -79,6 +79,12 @@
   padding: 20px 30px;
 }
 
+.navbar_button:hover {
+  cursor: pointer;
+  -webkit-animation-name: bounceIn;
+          animation-name: bounceIn;
+}
+
 .navbar_phone {
   padding-top: 9px;
   text-decoration: none;

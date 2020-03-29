@@ -29,6 +29,13 @@
     border-radius: 5px;
     background: #ffd200;
     padding: 20px 30px;
+
+    
+   
+}
+.navbar_button:hover{
+    cursor: pointer;
+    animation-name: bounceIn;
 }
 .navbar_phone{
     padding-top: 9px;
