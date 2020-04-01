@@ -1305,6 +1305,161 @@ input::placeholder {
           justify-content: space-between;
 }
 
+@media (max-width: 1200px) {
+  .pictures__container {
+    max-width: 1000px;
+  }
+  .pic__photo {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 1060px) {
+  .pictures__container {
+    max-width: 900px;
+  }
+  .pic__photo {
+    max-width: 270px;
+  }
+}
+
+@media (max-width: 900px) {
+  .photos {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .pic__photo {
+    max-width: 370px;
+  }
+  .photo {
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 550px) {
+  .pic__photo {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 340px) {
+  .pic__photo {
+    max-width: 250px;
+  }
+}
+
+.garant__container {
+  max-width: 1170px;
+  margin: auto;
+}
+
+.garant__title {
+  max-width: 800px;
+  font-size: 30px;
+  font-family: "Museo Sans Bold", sans-serif;
+  font-weight: 700;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.garants {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.garant__text {
+  font-size: 18px;
+}
+
+.g-text1 {
+  max-width: 190px;
+  margin: auto;
+  text-align: center;
+  margin-top: 45px;
+}
+
+.g-text2 {
+  max-width: 270px;
+  margin: auto;
+  text-align: center;
+  margin-top: 45px;
+}
+
+.g-text3 {
+  max-width: 275px;
+  margin: auto;
+  text-align: center;
+  margin-top: 45px;
+}
+
+@media (max-width: 1200px) {
+  .garants {
+    max-width: 1000px;
+    margin: auto;
+  }
+}
+
+@media (max-width: 1060px) {
+  .garants {
+    max-width: 900px;
+  }
+}
+
+@media (max-width: 900px) {
+  .garant__title {
+    max-width: 400px;
+  }
+  .garants {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .garant1, .garant2, .garant3 {
+    margin-bottom: 50px;
+  }
+  .garant_text {
+    margin-top: 5px;
+  }
+  .g-photo {
+    width: 400px;
+  }
+}
+
+@media (max-width: 550px) {
+  .g-photo {
+    width: 300px;
+  }
+}
+
+@media (max-width: 400px) {
+  .g-photo {
+    width: 300px;
+  }
+  .garant__title {
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 330px) {
+  .g-photo {
+    width: 270px;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;

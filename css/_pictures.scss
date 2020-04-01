@@ -7,3 +7,41 @@
     display: flex;
     justify-content: space-between;
 }
+@media (max-width: 1200px) {
+    .pictures__container {
+      max-width: 1000px;
+    }
+    .pic__photo{
+        max-width: 300px;
+    }
+  }
+  @media (max-width: 1060px){
+      .pictures__container{
+          max-width: 900px;
+      }
+      .pic__photo{
+          max-width: 270px;
+      }
+  }
+  @media (max-width: 900px){
+      .photos{
+          flex-direction: column;
+          align-items: center;
+      }
+      .pic__photo{
+          max-width: 370px;
+      }
+      .photo{
+          margin-bottom: 50px;
+      }
+  }
+  @media (max-width: 550px){
+      .pic__photo{
+          max-width: 300px;
+      }
+  }
+  @media (max-width: 340px){
+    .pic__photo{
+        max-width: 250px;
+    }
+  }
