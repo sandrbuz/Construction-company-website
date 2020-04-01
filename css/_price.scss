@@ -177,6 +177,7 @@
 }
 @media (max-width: 330px) {
   .cards {
+    flex-direction: column;
     margin: auto;
   }
   .price__title {
@@ -187,7 +188,7 @@
     margin-right: 0;
   }
   .price__subtitle {
-    width: 270px;
+    max-width: 270px;
     margin: auto;
     font-size: 14px;
   }

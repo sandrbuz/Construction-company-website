@@ -542,6 +542,10 @@
 
 @media (max-width: 330px) {
   .cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin: auto;
   }
   .price__title {
@@ -552,7 +556,7 @@
     margin-right: 0;
   }
   .price__subtitle {
-    width: 270px;
+    max-width: 270px;
     margin: auto;
     font-size: 14px;
   }
@@ -1225,6 +1229,80 @@ input::placeholder {
   .step {
     margin-bottom: 30px;
   }
+}
+
+.yellow {
+  background: #ffc000;
+}
+
+.yellow__container {
+  max-width: 1170px;
+  margin: auto;
+}
+
+.yellow__text {
+  font-family: "Museo Sans light", sans-serif;
+  font-weight: 300;
+  font-size: 32px;
+  width: 950px;
+  text-align: center;
+  padding: 100px 0;
+  margin: auto;
+}
+
+@media (max-width: 1200px) {
+  .yellow__container {
+    max-width: 1000px;
+  }
+  .yellow__text {
+    max-width: 900px;
+  }
+}
+
+@media (max-width: 900px) {
+  .yellow__text {
+    max-width: 700px;
+  }
+}
+
+@media (max-width: 700px) {
+  .yellow__text {
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 550px) {
+  .yellow__text {
+    max-width: 350px;
+  }
+}
+
+@media (max-width: 400px) {
+  .yellow__text {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 350px) {
+  .yellow__text {
+    max-width: 250px;
+    font-size: 18px;
+  }
+}
+
+.pictures__container {
+  max-width: 1170px;
+  margin: auto;
+}
+
+.photos {
+  padding: 100px 0 140px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 * {
