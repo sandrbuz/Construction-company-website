@@ -2,6 +2,9 @@
     max-width: 1170px;
     margin: auto;
 }
+.garant{
+    margin-bottom: 230px;
+}
 .garant__title{
     max-width: 800px;
     font-size: 30px;
@@ -64,6 +67,10 @@
     .g-photo{
       width: 400px;
     }
+    .garant{
+        margin-bottom: 100px;
+    }
+   
 }
 @media (max-width: 550px){
     .g-photo{
