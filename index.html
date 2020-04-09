@@ -411,9 +411,10 @@
            </div>
            <div class="brif__subtitle">Для этого заполните форму ниже</div>
            
-            <form class="b_form" action="#">
-              <input class="b_input b_input1"  type="text" placeholder="Ваше имя">
-             <input class="b_input b_input2"  type="tel" placeholder="Ваш телефон">
+            <form class="b_form" action="#" id="brif-form" >
+              <input name="username" class="b_input b_input1"   type="text" placeholder="Ваше имя">
+             <input name="phone" class="b_input b_input2 phone"  type="tel" placeholder="Ваш телефон">
+             <input name="email" class="b_input b_input3"  type="email" placeholder="Ваш email">
              <button class="button brif__button">Расчитать стоимость</button>
             </form>
            <div class="brif_description">
@@ -440,6 +441,9 @@
     ></script>
     <script src="js/slick.min.js"></script>
     <script src="js/wow.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+
 
     <script src="js/main.js"></script>
     <script src="js/modal.js"></script>

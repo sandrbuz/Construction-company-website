@@ -1,3 +1,5 @@
+// модальное окно на чистом JS
+
 // var button = document.querySelector('#button');
 // var modal = document.querySelector('#modal');
 // var close = document.querySelector('#close');
@@ -50,5 +52,56 @@ $('.sl').slick({
      
     ]
   });
-  // Библиотека wow.js
+
+
+
+
+
+
+
+  // Библиотека wow.js (for animation)
   new WOW().init();
+
+  // Валидация форм
+
+  $(document).ready(function(){
+    // Валидация форм
+
+    $('#brif-form').validate({
+      rules: {
+        phone:{
+          required: true,
+
+        },
+        username:{
+             required:true,
+             minlength: 2,
+             maxlenght:15
+
+        },
+        phone: "required",
+        email:{
+          required: true,
+          email: true
+        }
+      },
+      messages: {
+        phone:{
+          required: "Укажите телефон",
+          minlength: jQuery.validator.format("Осталось символов: {0}")
+        },
+        username:{
+          required: "Укажите имя",
+          minlength: jQuery.validator.format("Осталось символов: {0}")
+        },
+        email: "Нам нужен ваш email",
+        phone: "Укажите телефон"
+      }
+    });
+
+  //  Маска для телефона
+  $('.phone').mask('8 (999) 999-99-99')
+
+  });
+
+
