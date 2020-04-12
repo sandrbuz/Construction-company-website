@@ -65,7 +65,7 @@ $('.sl').slick({
   // Валидация форм
 
   $(document).ready(function(){
-    // Валидация форм
+    // Валидация формы brif
 
     $('#brif-form').validate({
       rules: {

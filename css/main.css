@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url(f:\Работа\курс GLO\портфолио.полностью сам макет(14.15.16.17.18\css\animation.css);
+@import url(c:\Users\Сандрик\Desktop\Резервные\12.04.20. (измен)портфолио.полностью сам макет(14.15.16.17.18 — копия\css\animation.css);
 @font-face {
   font-family: "Museo Sans Light";
   src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.eot");
@@ -827,6 +827,7 @@
   color: green;
   font-size: 15px;
   padding-left: 26px;
+  margin-bottom: 40px;
 }
 
 input::-webkit-input-placeholder {
@@ -850,8 +851,9 @@ input::placeholder {
 }
 
 .offer-button {
+  width: 510px;
+  height: 70px;
   margin-bottom: 30px;
-  padding: 27px 102px;
   border: none;
   border-radius: 10px;
   background: #ffd200;
@@ -910,19 +912,11 @@ input::placeholder {
   .offer-subtitle {
     width: 100%;
   }
-  .inputs {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
   .offer-input {
-    width: 450px;
+    width: 487px;
   }
   .offer-button {
-    padding: 27px 353px;
+    width: 1000px;
   }
   .bottom-offer {
     -webkit-box-pack: justify;
@@ -936,7 +930,10 @@ input::placeholder {
     max-width: 900px;
   }
   .offer-button {
-    padding: 27px 302px;
+    width: 900px;
+  }
+  .offer-input {
+    max-width: 430px;
   }
 }
 
@@ -945,7 +942,10 @@ input::placeholder {
     max-width: 800px;
   }
   .offer-button {
-    padding: 27px 253px;
+    width: 800px;
+  }
+  .offer-input {
+    max-width: 387px;
   }
 }
 
@@ -959,7 +959,10 @@ input::placeholder {
             justify-content: center;
   }
   .offer-button {
-    padding: 27px 203px;
+    width: 700px;
+  }
+  .offer-input {
+    max-width: 337px;
   }
 }
 
@@ -968,7 +971,16 @@ input::placeholder {
     width: 600px;
   }
   .offer-button {
-    padding: 27px 152px;
+    max-width: 600px;
+  }
+  .offer-input {
+    max-width: 900px;
+  }
+  .offer-call {
+    margin-left: 0;
+  }
+  .inputs {
+    text-align: center;
   }
 }
 
@@ -977,7 +989,8 @@ input::placeholder {
     width: 400px;
   }
   .offer-button {
-    padding: 27px 53px;
+    max-width: 400px;
+    margin-top: 30px;
   }
   .inputs {
     -webkit-box-orient: vertical;
@@ -1017,11 +1030,21 @@ input::placeholder {
   .offer-call {
     margin-bottom: -20px;
   }
+  .offer-button {
+    max-width: 300px;
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 360px) {
   .offer-container {
     width: 300px;
+  }
+  .offer-button {
+    max-width: 280px;
+  }
+  .offer-input {
+    max-width: 280px;
   }
 }
 
@@ -1034,7 +1057,7 @@ input::placeholder {
   }
   .offer-button {
     font-size: 14px;
-    padding: 20px 30px;
+    max-width: 250px;
   }
   .offer-input {
     width: 250px;
