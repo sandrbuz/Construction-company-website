@@ -115,6 +115,16 @@ margin-right: 10px;
 .b_input::-webkit-input-placeholder { color:#858383; }
 .error{
     border: 1px solid red;
+    
+}
+#username-error, #phone-error, #email-error{
+  margin-left: 40px;
+  margin-bottom: 20px;
+  margin-top: -20px;
+  max-width: 200px;
+}
+#email-error{
+    margin-top: -35px;
 }
 
 @media (max-width: 1200px){

@@ -94,22 +94,26 @@
             <span class="offer-subtitle">
               Оставьте заявку на разработку бесплатного дизайн-проекта!
             </span>
-            <div class="inputs">
+            <form action="#" id="offer-form" class="inputs">
               <input
                 class="offer-input offer-name"
                 placeholder="Ваше имя"
                 type="text"
+                name="ofname"
               />
               <input
                 class="offer-input offer-call"
                 placeholder="Ваш телефон"
-                type="number"
+                type="tel"
+                name="ofphone"
               />
-            </div>
+              <button class="offer-button">
+                Получить бесплатный дизайн-проект
+              </button>
+            </form>
+         
             <!-- inputs -->
-            <button class="offer-button">
-              Получить бесплатный дизайн-проект
-            </button>
+          
             <div class="bottom-offer">
               <div class="feedback">
                 Наш менеджер перезвонит Вам в течение 60 секунд
@@ -341,7 +345,7 @@
     <section class="garant">
       <div class="garant__container">
         <p class="garant__title">Все наши гарантийные обязательства <br>
-          подбродно и прозрачно описаны в договоре
+          подробно и прозрачно описаны в договоре
         </p>
         <div class="garants">
           <div class="garant1">
@@ -359,8 +363,8 @@
           </div>
           <div class="garant3">
             <img class="g-photo" src="img/Guarantee/garant3.png" alt="">
-            <p class="garant_text g-text3">Гарантия на точное соблюидение
-              сроков и ответственность закупаемих невыполнение
+            <p class="garant_text g-text3">Гарантия на точное соблюдение
+              сроков и ответственность за их невыполнение
             </p>
           </div>
         </div>
@@ -413,7 +417,7 @@
            
             <form class="b_form" action="#" id="brif-form" >
               <input name="username" class="b_input b_input1"   type="text" placeholder="Ваше имя">
-             <input name="phone" class="b_input b_input2 phone"  type="tel" placeholder="Ваш телефон">
+             <input name="phone" class="b_input b_input2 brif_phone"  type="tel" placeholder="Ваш телефон">
              <input name="email" class="b_input b_input3"  type="email" placeholder="Ваш email">
              <button class="button brif__button">Расчитать стоимость</button>
             </form>

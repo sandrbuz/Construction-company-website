@@ -65,7 +65,7 @@ $('.sl').slick({
   // Валидация форм
 
   $(document).ready(function(){
-    // Валидация форм
+    // Валидация формы brif
 
     $('#brif-form').validate({
       rules: {
@@ -100,7 +100,42 @@ $('.sl').slick({
     });
 
   //  Маска для телефона
-  $('.phone').mask('8 (999) 999-99-99')
+  $('.brif_phone').mask('8 (999) 999-99-99')
+
+
+  // Валидация формы offer
+    
+  $('#offer-form').validate({
+
+    rules: {
+
+      ofname:{
+
+           required: true,
+           minlength: 2
+     },
+
+      ofphone: {
+
+       required: true
+     }
+
+    },
+     messages:{
+       ofname:{
+         required: "Укажите имя",
+         minlength: jQuery.validator.format("Осталось символов: {0}")
+       },
+       ofphone:{
+         required: "Укажите телефон"
+       }
+     }
+   
+  
+
+
+
+  });
 
   });
 

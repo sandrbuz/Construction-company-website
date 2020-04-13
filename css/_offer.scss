@@ -40,6 +40,7 @@
   // max-width: 240px;
   // height: 66px;
   padding-left: 26px;
+  margin-bottom: 40px;
 }
 input::placeholder {
   color: #bfbfbf;
@@ -49,8 +50,10 @@ input::placeholder {
   margin-left: 20px;
 }
 .offer-button {
+  width: 510px;
+  height: 70px;
   margin-bottom: 30px;
-  padding: 27px 102px;
+  // padding: 27px 110px;
   border: none;
   border-radius: 10px;
   background: #ffd200;
@@ -79,6 +82,12 @@ input::placeholder {
   text-decoration: none;
   color: black;
 }
+
+#ofname-error, #ofphone-error{
+  margin-left: -200px ;
+  position: absolute;
+  margin-top: 70px;
+}
 @media (max-width: 1200px) {
   .offer {
     background: none;
@@ -97,15 +106,15 @@ input::placeholder {
     width: 100%;
   }
   .inputs {
-    display: flex;
-    justify-content: space-between;
+    // display: flex;
+    // justify-content: space-between;
   }
   .offer-input {
-    width: 450px;
+    width: 487px;
   }
   .offer-button {
-    // width: 1000px;
-    padding: 27px 353px;
+    width: 1000px;
+    // padding: 27px 353px;
   }
   .bottom-offer {
     justify-content: space-between;
@@ -116,8 +125,11 @@ input::placeholder {
     max-width: 900px;
   }
   .offer-button {
-    // width: 900px;
-    padding: 27px 302px;
+    width: 900px;
+    // padding: 27px 302px;
+  }
+  .offer-input{
+    max-width: 430px;
   }
 }
 @media (max-width: 955px) {
@@ -125,8 +137,11 @@ input::placeholder {
     max-width: 800px;
   }
   .offer-button {
-    // width: 800px;
-    padding: 27px 253px;
+    width: 800px;
+    // padding: 27px 253px;
+  }
+  .offer-input{
+      max-width: 387px;
   }
 }
 @media (max-width: 800px) {
@@ -137,9 +152,12 @@ input::placeholder {
     justify-content: center;
   }
   .offer-button {
-    padding: 27px 203px;
-    // width: 700px;
+    // padding: 27px 203px;
+    width: 700px;
     // margin: 0 35px;
+  }
+  .offer-input{
+    max-width: 337px;
   }
 }
 @media (max-width: 768px) {
@@ -147,15 +165,28 @@ input::placeholder {
     width: 600px;
   }
   .offer-button {
-    padding: 27px 152px;
+    // padding: 27px 152px;
+    max-width: 600px;
   }
+  .offer-input{
+    max-width: 900px;
+  }
+  .offer-call{
+    margin-left: 0;
+  }
+  .inputs{
+    text-align: center;
+  }
+    
 }
 @media (max-width: 600px) {
   .offer-container {
     width: 400px;
   }
   .offer-button {
-    padding: 27px 53px;
+    // padding: 27px 53px;
+    max-width: 400px;
+    margin-top: 30px;
   }
   .inputs {
     flex-direction: column;
@@ -166,6 +197,12 @@ input::placeholder {
     margin: 0;
   }
   .offer-name {
+    margin-bottom: 10px;
+  }
+  .error{
+    margin-bottom: 25px ;
+  }
+  #ofname-error{
     margin-bottom: 10px;
   }
 }
@@ -188,10 +225,29 @@ input::placeholder {
   .offer-call {
     margin-bottom: -20px;
   }
+  .offer-button{
+    max-width: 300px;
+    font-size: 14px;
+  }
+ .error{
+   margin-bottom: 20px;
+
+ }
+ #ofname-error,#ofphone-error{
+   font-size: 15px;
+   margin-bottom: -70px;
+   
+ }
 }
 @media (max-width: 360px) {
   .offer-container {
     width: 300px;
+  }
+  .offer-button{
+    max-width: 280px;
+  }
+  .offer-input{
+      max-width: 280px;
   }
 }
 @media (max-width: 320px) {
@@ -203,7 +259,8 @@ input::placeholder {
   }
   .offer-button {
     font-size: 14px;
-    padding: 20px 30px;
+    // padding: 20px 30px;
+    max-width: 250px;
   }
   .offer-input {
     width: 250px;
