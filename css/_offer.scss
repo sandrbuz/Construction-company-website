@@ -108,10 +108,7 @@ input::placeholder {
   .offer-subtitle {
     width: 100%;
   }
-  // .inputs {
-  // display: flex;
-  // justify-content: space-between;
-  // }
+   
   .offer-input {
     width: 487px;
   }
@@ -131,7 +128,7 @@ input::placeholder {
     width: 900px;
     // padding: 27px 302px;
   }
-  .offer-input {
+  .offer-input{
     max-width: 430px;
   }
 }
@@ -143,8 +140,8 @@ input::placeholder {
     width: 800px;
     // padding: 27px 253px;
   }
-  .offer-input {
-    max-width: 387px;
+  .offer-input{
+      max-width: 387px;
   }
 }
 @media (max-width: 800px) {
@@ -159,7 +156,7 @@ input::placeholder {
     width: 700px;
     // margin: 0 35px;
   }
-  .offer-input {
+  .offer-input{
     max-width: 337px;
   }
 }
@@ -180,6 +177,16 @@ input::placeholder {
   .inputs {
     text-align: center;
   }
+  .offer-input{
+    max-width: 900px;
+  }
+  .offer-call{
+    margin-left: 0;
+  }
+  .inputs{
+    text-align: center;
+  }
+    
 }
 @media (max-width: 600px) {
   .offer-container {

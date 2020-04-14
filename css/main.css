@@ -991,6 +991,15 @@ input::placeholder {
   .inputs {
     text-align: center;
   }
+  .offer-input {
+    max-width: 900px;
+  }
+  .offer-call {
+    margin-left: 0;
+  }
+  .inputs {
+    text-align: center;
+  }
 }
 
 @media (max-width: 600px) {

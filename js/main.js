@@ -60,6 +60,7 @@ new WOW().init();
 $(document).ready(function () {
   // Валидация формы brif
 
+<<<<<<< HEAD
   $("#brif-form").validate({
     rules: {
       phone: {
@@ -89,6 +90,12 @@ $(document).ready(function () {
       phone: "Укажите телефон",
     },
   });
+=======
+  // Валидация форм
+
+  $(document).ready(function(){
+    // Валидация формы brif
+>>>>>>> 301d25405879e37c4f75ab2928490e87f87ab00b
 
   //  Маска для телефона brif
   $(".brif_phone").mask("8 (999) 999-99-99");
