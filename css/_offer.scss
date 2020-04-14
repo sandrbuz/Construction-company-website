@@ -83,10 +83,13 @@ input::placeholder {
   color: black;
 }
 
-#ofname-error, #ofphone-error{
-  margin-left: -200px ;
+#ofname-error,
+#ofphone-error {
+  margin-left: -200px;
   position: absolute;
   margin-top: 70px;
+  border: none;
+  color: red;
 }
 @media (max-width: 1200px) {
   .offer {
@@ -105,10 +108,10 @@ input::placeholder {
   .offer-subtitle {
     width: 100%;
   }
-  .inputs {
-    // display: flex;
-    // justify-content: space-between;
-  }
+  // .inputs {
+  // display: flex;
+  // justify-content: space-between;
+  // }
   .offer-input {
     width: 487px;
   }
@@ -128,7 +131,7 @@ input::placeholder {
     width: 900px;
     // padding: 27px 302px;
   }
-  .offer-input{
+  .offer-input {
     max-width: 430px;
   }
 }
@@ -140,8 +143,8 @@ input::placeholder {
     width: 800px;
     // padding: 27px 253px;
   }
-  .offer-input{
-      max-width: 387px;
+  .offer-input {
+    max-width: 387px;
   }
 }
 @media (max-width: 800px) {
@@ -156,7 +159,7 @@ input::placeholder {
     width: 700px;
     // margin: 0 35px;
   }
-  .offer-input{
+  .offer-input {
     max-width: 337px;
   }
 }
@@ -168,16 +171,15 @@ input::placeholder {
     // padding: 27px 152px;
     max-width: 600px;
   }
-  .offer-input{
+  .offer-input {
     max-width: 900px;
   }
-  .offer-call{
+  .offer-call {
     margin-left: 0;
   }
-  .inputs{
+  .inputs {
     text-align: center;
   }
-    
 }
 @media (max-width: 600px) {
   .offer-container {
@@ -199,10 +201,10 @@ input::placeholder {
   .offer-name {
     margin-bottom: 10px;
   }
-  .error{
-    margin-bottom: 25px ;
+  .error {
+    margin-bottom: 25px;
   }
-  #ofname-error{
+  #ofname-error {
     margin-bottom: 10px;
   }
 }
@@ -213,6 +215,7 @@ input::placeholder {
   .offer-input {
     padding: 27px;
     width: 300px;
+    
   }
   .bottom-offer {
     flex-direction: column;
@@ -225,29 +228,29 @@ input::placeholder {
   .offer-call {
     margin-bottom: -20px;
   }
-  .offer-button{
+  .offer-button {
     max-width: 300px;
     font-size: 14px;
   }
- .error{
-   margin-bottom: 20px;
-
- }
- #ofname-error,#ofphone-error{
-   font-size: 15px;
-   margin-bottom: -70px;
-   
- }
+  .error {
+    margin-bottom: 20px;
+  }
+  #ofname-error,
+  #ofphone-error {
+    font-size: 15px;
+    
+    
+  }
 }
 @media (max-width: 360px) {
   .offer-container {
     width: 300px;
   }
-  .offer-button{
+  .offer-button {
     max-width: 280px;
   }
-  .offer-input{
-      max-width: 280px;
+  .offer-input {
+    max-width: 280px;
   }
 }
 @media (max-width: 320px) {
