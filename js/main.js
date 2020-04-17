@@ -13,9 +13,9 @@
 // });
 
 // слайдер на чистом JS
-
+$(document).ready(function () {
 $(".sl").slick({
-  infinite: true,
+  // infinite: true,
   slidesToShow: 3,
   slidesToScroll: 1,
   prevArrow: $(".arrow-left"),
@@ -57,7 +57,7 @@ new WOW().init();
 
 // Валидация форм
 
-$(document).ready(function () {
+
   // Валидация формы brif
 
   $("#brif-form").validate({
