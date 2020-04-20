@@ -649,6 +649,10 @@
   border-radius: 50%;
 }
 
+.hero-cal {
+  padding: 10px 12.5px;
+}
+
 .hero-block_left {
   display: -webkit-box;
   display: -ms-flexbox;
