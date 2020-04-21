@@ -60,6 +60,13 @@ input::placeholder {
   font-size: 16px;
   @include bold();
 }
+.offer-button:hover{
+  background:#eac100;
+  cursor: pointer;
+}
+.offer-button:active{
+  background: #d2ad02;
+}
 .bottom-offer {
   display: flex;
   align-items: center;

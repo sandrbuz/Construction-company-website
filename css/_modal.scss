@@ -36,7 +36,10 @@ background: tomato;
 .close:active{
     background-color: red;
 }
-
+.close:hover{
+  background-color: #B22222;
+  cursor: pointer;
+}
 
 
 

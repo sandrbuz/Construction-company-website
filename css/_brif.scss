@@ -107,6 +107,13 @@ margin-right: 10px;
     margin-bottom: 35px;
     
 }
+.brif__button:hover{
+    cursor: pointer;
+    background: #eac100;
+}
+.brif__button:active{
+    background:  #d2ad02;
+}
 .brif_description{
     font-size: 15px;
     @include reg();

@@ -83,8 +83,11 @@
 
 .navbar_button:hover {
   cursor: pointer;
-  -webkit-animation-name: bounceIn;
-          animation-name: bounceIn;
+  background: #eac100;
+}
+
+.navbar_button:active {
+  background-color: #d2ad02;
 }
 
 .navbar_phone {
@@ -650,7 +653,7 @@
 }
 
 .hero-cal {
-  padding: 10px 12.5px;
+  padding: 10px 11.5px;
 }
 
 .hero-block_left {
@@ -864,6 +867,15 @@ input::placeholder {
   font-size: 16px;
   font-family: "Museo Sans Bold", sans-serif;
   font-weight: 700;
+}
+
+.offer-button:hover {
+  background: #eac100;
+  cursor: pointer;
+}
+
+.offer-button:active {
+  background: #d2ad02;
 }
 
 .bottom-offer {
@@ -1132,6 +1144,11 @@ input::placeholder {
 
 .close:active {
   background-color: red;
+}
+
+.close:hover {
+  background-color: #B22222;
+  cursor: pointer;
 }
 
 .steps__container {
@@ -1660,6 +1677,15 @@ input::placeholder {
   margin-bottom: 35px;
 }
 
+.brif__button:hover {
+  cursor: pointer;
+  background: #eac100;
+}
+
+.brif__button:active {
+  background: #d2ad02;
+}
+
 .brif_description {
   font-size: 15px;
   font-family: "Museo Sans light", sans-serif;
@@ -1838,7 +1864,7 @@ input::placeholder {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
   padding-top: 100px;
-  padding-left: 1100px;
+  padding-left: 1050px;
 }
 
 .f-contacts__title {

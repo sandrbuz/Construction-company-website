@@ -36,7 +36,10 @@
 }
 .navbar_button:hover{
     cursor: pointer;
-    animation-name: bounceIn;
+    background:#eac100;
+}
+.navbar_button:active{
+    background-color: #d2ad02;
 }
 .navbar_phone{
     padding-top: 9px;
