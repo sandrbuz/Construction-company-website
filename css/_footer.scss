@@ -17,7 +17,7 @@
 .f-contacts {
   flex-basis: 50%;
   padding-top: 100px;
-  padding-left: 1050px;
+  padding-left: 1160px;
 }
 // .f-contacts-block{
 //     display: flex;
@@ -53,6 +53,11 @@
 .foot-tel {
   text-decoration: none;
   color: #000;
+}
+@media (max-width: 1650px){
+  .f-contacts{
+    padding-left: 1040px;
+  }
 }
 @media (max-width: 1500px) {
   .f-contacts {
@@ -121,5 +126,8 @@
   }
   .f-contacts {
     padding-left: 50px;
+  }
+  .map{
+    height: 50%;
   }
 }
