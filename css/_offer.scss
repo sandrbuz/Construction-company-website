@@ -60,11 +60,11 @@ input::placeholder {
   font-size: 16px;
   @include bold();
 }
-.offer-button:hover{
-  background:#eac100;
+.offer-button:hover {
+  background: #eac100;
   cursor: pointer;
 }
-.offer-button:active{
+.offer-button:active {
   background: #d2ad02;
 }
 .bottom-offer {
@@ -222,7 +222,6 @@ input::placeholder {
   .offer-input {
     padding: 27px;
     width: 300px;
-    
   }
   .bottom-offer {
     flex-direction: column;
@@ -245,8 +244,6 @@ input::placeholder {
   #ofname-error,
   #ofphone-error {
     font-size: 15px;
-    
-    
   }
 }
 @media (max-width: 360px) {
