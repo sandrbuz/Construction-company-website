@@ -22,7 +22,7 @@
                   >+7 (495) 42-251-31
                 </a>
               </div>
-              <button class="navbar_button " id="button">
+              <button class="navbar_button" id="button">
                 Перезвоните мне
               </button>
             </div>
@@ -433,7 +433,7 @@
             </div>
             <div class="brif__subtitle">Для этого заполните форму ниже</div>
 
-            <form class="b_form" action="#" id="brif-form">
+            <form  method="POST" class="b_form" action="mail.php" id="brif-form">
               <input
                 name="username"
                 class="b_input b_input1"
@@ -452,7 +452,9 @@
                 type="email"
                 placeholder="Ваш email"
               />
-              <button class="button brif__button">Расчитать стоимость</button>
+              <button type="submit" class="button brif__button">
+                Расчитать стоимость
+              </button>
             </form>
             <div class="brif_description">
               Мы перезвоним Вам в течение 60 секунд
