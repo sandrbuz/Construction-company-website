@@ -1,5 +1,7 @@
 @import "fonts";
-
+.success{
+  padding-top: -40px;
+}
 .offer {
   background: url("../img/offer-background.png") no-repeat;
   background-position: right top;
@@ -27,9 +29,9 @@
   font-size: 16px;
   @include reg();
 }
-.inputs {
-  margin-bottom: 30px;
-}
+// .inputs {
+//   margin-bottom: 5px;
+// }
 .offer-input {
   padding: 26px 25px 26px 26px;
   border-radius: 10px;
@@ -52,7 +54,7 @@ input::placeholder {
 .offer-button {
   width: 510px;
   height: 70px;
-  margin-bottom: 30px;
+  // margin-bottom: 30px;
   // padding: 27px 110px;
   border: none;
   border-radius: 10px;
@@ -70,6 +72,7 @@ input::placeholder {
 .bottom-offer {
   display: flex;
   align-items: center;
+  margin-top: 50px;
 }
 .feedback {
   width: 230px;
@@ -271,5 +274,8 @@ input::placeholder {
   }
   .offer-input {
     width: 250px;
+  }
+  .success{
+    font-size: 14px;
   }
 }

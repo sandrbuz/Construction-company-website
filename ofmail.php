@@ -4,9 +4,9 @@ require_once('phpmailer/PHPMailerAutoload.php');
 $mail = new PHPMailer;
 $mail->CharSet = 'utf-8';
 
-$name = $_POST['username'];
-$phone = $_POST['phone'];
-$email = $_POST['email'];
+$name1 = $_POST['ofname'];
+$phone1 = $_POST['ofphone'];
+// $email = $_POST['email'];
 
 //$mail->SMTPDebug = 3;                               // Enable verbose debug output
 
@@ -28,13 +28,13 @@ $mail->addAddress('Sanbuz@mail.ru');     // Кому будет уходить �
 //$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
 $mail->isHTML(true);                                  // Set email format to HTML
 
-$mail->Subject = 'Заявка с тестового сайта на бесплатный расчет ремонта';
-$mail->Body    = '' .$name . ' оставил заявку, его телефон ' .$phone. '<br>Почта этого пользователя: ' .$email;
+$mail->Subject = 'Заявка с тестового сайта на бесплатный дизайн';
+$mail->Body    = '' .$name1 . ' оставил заявку, его телефон ' .$phone1;
 $mail->AltBody = '';
 
 if(!$mail->send()) {
     echo 'Error';
 } else {
-    header('location: thank-you.html');
+    header('location: thank-you-of.html');
 }
 ?>

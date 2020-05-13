@@ -118,4 +118,39 @@ new WOW().init();
   });
   // Маска для телефона offer
   $(".offer-call").mask("8 (999) 999-99-99");
+  // отправка offer формы
+  $("#offer-form").on("submit", function (event) {
+    event.preventDefault();
+
+
+
+
+    $.ajax({
+      url: "ofmail.php",
+      type: "POST",
+      data: $(this).serialize(),
+      success: function (data) {
+        $(".success").html(data + " Ваша заявка отправлена.");
+
+      },
+      error: function (jqXHR, textStatus) {
+        console.log(jqXHR + ": " + textStatus);
+      },
+    });
+
+
+
+    
+  });
+
+
+
+  // $("#offer-form").submit(function () {
+  //   alert("Спасибо! Ваш запрос отправлен");
+
+  //   return false;
+  // });
+
+
+
 });

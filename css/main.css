@@ -1,5 +1,6 @@
 @charset "UTF-8";
-@import url(f:\Работа\курс GLO\1портфолио.полностью сам макет(14.15.16.17.18 — копия\css\animation.css);
+@import url(f:\Работа\курс GLO\1портфолио.полностью сам макет(14.15.16.17.18 — копия\css\animate.css);
+@import url(f:\Работа\курс GLO\1портфолио.полностью сам макет(14.15.16.17.18 — копия\css\animate.css);
 @font-face {
   font-family: "Museo Sans Light";
   src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.eot");
@@ -823,10 +824,6 @@
   font-weight: 300;
 }
 
-.inputs {
-  margin-bottom: 30px;
-}
-
 .offer-input {
   padding: 26px 25px 26px 26px;
   border-radius: 10px;
@@ -860,7 +857,6 @@ input::placeholder {
 .offer-button {
   width: 510px;
   height: 70px;
-  margin-bottom: 30px;
   border: none;
   border-radius: 10px;
   background: #ffd200;
@@ -885,6 +881,7 @@ input::placeholder {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 50px;
 }
 
 .feedback {
