@@ -139,7 +139,41 @@
     <div class="modal" id="modal">
       <div class="modal_dialog">
         <div class="close" id="close">&times;</div>
-        <h4 class="modal_text">Всплывающее окно</h4>
+         <div class="modal-column mod-col-1">
+             <div class="modal-content">
+               content
+             </div>
+         </div>
+         
+         <div class="modal-column mod-col-2">
+           <h4 class="modal_title"> Узнайте точную стоимость ремонта по телефону</h4>
+           <div class="modal_subtitle">
+             Заполните поля ниже - мы свяжемся с Вами
+           </div>
+              <form action="#" id="modal-form" class="inputs modal-form">
+                           <input
+                             class="offer-input offer-name modal-in m-in-1"
+                             placeholder="Ваше имя"
+                             type="text"
+                             name="modname"
+                           />
+                           <input
+                             class="offer-input offer-call modal-in m-in-2"
+                             placeholder="Ваш телефон"
+                             type="tel"
+                             name="modphone"
+                           />
+                           <button class="offer-button modal-btn" type="submit">
+                             Узнать стоимость
+                           </button>
+                         </form>
+                         <div class="success1"></div>
+                         <div class="right_col-bottom">
+                           Или Вы можете перезвонить нам сами 
+                           по телефону
+                         </div>
+                         <a href="tel:+78182425131" class="right_col-text">+7 (8182) 42-51-31</a>
+         </div>
       </div>
       <!-- modal_dialog -->
     </div>

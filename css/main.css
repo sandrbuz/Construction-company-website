@@ -791,6 +791,10 @@
   font-style: normal;
 }
 
+.success {
+  padding-top: -40px;
+}
+
 .offer {
   background: url("../img/offer-background.png") no-repeat;
   background-position: right top;
@@ -1097,6 +1101,9 @@ input::placeholder {
   .offer-input {
     width: 250px;
   }
+  .success {
+    font-size: 14px;
+  }
 }
 
 .modal {
@@ -1116,12 +1123,14 @@ input::placeholder {
 }
 
 .modal_dialog {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   position: relative;
-  margin: 500px auto;
-  max-width: 500px;
-  width: 80%;
-  height: 200px;
-  background: white;
+  margin: auto;
+  width: 1070px;
+  height: 700px;
+  background: #ffffff;
 }
 
 .modal_dialog .close {
@@ -1132,13 +1141,6 @@ input::placeholder {
   background: tomato;
 }
 
-.modal_dialog .modal_text {
-  position: absolute;
-  top: 80px;
-  left: 115px;
-  font-size: 30px;
-}
-
 .close:active {
   background-color: red;
 }
@@ -1146,6 +1148,99 @@ input::placeholder {
 .close:hover {
   background-color: #B22222;
   cursor: pointer;
+}
+
+.mod-col-1 {
+  background: #f7f7f7;
+}
+
+.mod-col-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.modal-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.modal-column {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.modal-btn {
+  font-family: "Museo Sans Bold", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  max-width: 370px;
+  margin: auto;
+}
+
+.modal-in {
+  width: 370px;
+}
+
+.m-in-2 {
+  margin-left: 0;
+  margin: auto;
+  margin-bottom: 33px;
+}
+
+.m-in-1 {
+  margin: auto;
+  margin-bottom: 15px;
+}
+
+.modal_title {
+  padding-top: 80px;
+  text-align: center;
+  margin: 0 auto;
+  color: 333333;
+  max-width: 300px;
+  font-size: 22px;
+  font-family: "Museo Sans Bold", sans-serif;
+  font-weight: 700;
+}
+
+.modal_subtitle {
+  padding-top: 45px;
+  padding-bottom: 40px;
+  margin: auto;
+  font-size: 16px;
+  font-family: "Museo Sans light", sans-serif;
+  font-weight: 300;
+  max-width: 350px;
+}
+
+.right_col-bottom {
+  margin: auto;
+  width: 270px;
+  font-size: 15px;
+  font-family: "Museo Sans light", sans-serif;
+  font-weight: 300;
+  text-align: center;
+}
+
+.right_col-text {
+  padding-bottom: 50px;
+  margin: auto;
+  font-family: "Museo Sans Bold", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  max-width: 230px;
+  color: #333333;
+  text-decoration: none;
 }
 
 .steps__container {
