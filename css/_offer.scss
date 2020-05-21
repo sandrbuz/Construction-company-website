@@ -1,6 +1,7 @@
 @import "fonts";
 .success{
   padding-top: -40px;
+@include bold();
 }
 .offer {
   background: url("../img/offer-background.png") no-repeat;
