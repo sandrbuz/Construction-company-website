@@ -13,7 +13,13 @@ $(document).ready(function(){
   find.on('click',function(event){
       event.preventDefault();
       modal.addClass('modal_active');
+      var target = $(this).attr('data-target');
+      $('.modal-content').load(target+".html");
   });
+
+
+
+
   
 
 

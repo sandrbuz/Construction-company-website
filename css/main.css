@@ -1213,7 +1213,7 @@ input::placeholder {
   font-weight: 700;
   font-size: 16px;
   max-width: 370px;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .modal-in {
@@ -1253,7 +1253,7 @@ input::placeholder {
 }
 
 .right_col-bottom {
-  margin: auto;
+  margin: 0 auto;
   width: 270px;
   font-size: 15px;
   font-family: "Museo Sans light", sans-serif;
@@ -1270,6 +1270,66 @@ input::placeholder {
   max-width: 230px;
   color: #333333;
   text-decoration: none;
+}
+
+@media (max-width: 900px) {
+  .modal_dialog {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 700px;
+  }
+  .mod-col-1 {
+    display: none;
+  }
+  .modal_dialog {
+    height: 700px;
+  }
+}
+
+@media (max-width: 375px) {
+  .modal_dialog {
+    max-width: 350px;
+  }
+  .offer-input {
+    max-width: 300px;
+  }
+  .offer-button {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 335px) {
+  .modal_title {
+    margin-top: -20px;
+    font-size: 18px;
+    max-width: 250px;
+  }
+  .offer-input {
+    max-width: 270px;
+    padding: 10px;
+    margin-top: -10px;
+  }
+  .m-in-1 {
+    margin-top: -20px;
+  }
+  .offer-button {
+    max-width: 270px;
+    height: 40px;
+    margin-top: -20px;
+  }
+  .modal_subtitle {
+    margin-top: -20px;
+    max-width: 250px;
+  }
+  .right_col-bottom {
+    font-size: 15px;
+    margin-top: -40px;
+  }
+  .right_col-text {
+    font-size: 16px;
+  }
 }
 
 .steps__container {
@@ -2113,6 +2173,84 @@ input::placeholder {
   .f-contacts {
     padding-left: 50px;
   }
+}
+
+.bath__container {
+  max-width: 400px;
+  margin: auto;
+}
+
+.bath_top {
+  margin-top: 90px;
+}
+
+.bath_top_item_right {
+  margin-left: 30px;
+}
+
+.bath_top_item2, .bath_top_item3 {
+  margin-top: 15px;
+}
+
+.bath_top_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.bath_top_right_title {
+  font-size: 16px;
+  font-family: "Museo Sans Bold", sans-serif;
+  font-weight: 700;
+}
+
+.modal_bath_price {
+  font-size: 16px;
+  font-family: "Museo Sans light", sans-serif;
+  font-weight: 300;
+}
+
+.modal_bath_price2 {
+  font-size: 16px;
+  font-family: "Museo Sans light", sans-serif;
+  font-weight: 300;
+}
+
+.title_line {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  background-color: #ffd200;
+  width: 40px;
+  height: 2px;
+  border: none;
+}
+
+.bath_bottom__title {
+  font-size: 14px;
+  font-family: "Museo Sans Bold", sans-serif;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.bath_bottom__list {
+  font-size: 13px;
+  font-family: "Museo Sans Bold", sans-serif;
+  font-weight: 700;
+  color: #1e1e1e !important;
+  list-style-type: none;
+  margin-bottom: 15px;
+}
+
+.bath_bottom__list:before {
+  color: #ffd200;
+  content: '•';
+  padding-right: 10px;
+  width: 2px;
+  height: 2px;
+}
+
+.bath_bottom {
+  margin-top: 50px;
 }
 
 * {

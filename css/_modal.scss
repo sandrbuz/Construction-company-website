@@ -16,9 +16,17 @@
   z-index: 2;
 }
 .modal_active {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: -moz-box;
   display: flex;
 }
 .modal_dialog {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: -moz-box;
   display: flex;
   // align-items: center;
   z-index: 10;
@@ -66,11 +74,25 @@ background: tomato;
   background: #f7f7f7;
 }
 .mod-col-2{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: -moz-box;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
   display: flex;
 flex-direction: column;
 
 }
 .modal-form{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: -moz-box;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
 display: flex;
 flex-direction: column;
 
@@ -85,7 +107,7 @@ flex-direction: column;
   @include bold();
   font-size: 16px;
   max-width: 370px;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .modal-in{
@@ -122,7 +144,7 @@ flex-direction: column;
 }
 
 .right_col-bottom{
-  margin: auto;
+  margin: 0 auto;
   width: 270px;
   font-size: 15px;
   @include reg();
@@ -137,7 +159,72 @@ flex-direction: column;
   color: #333333;
   text-decoration: none;
 }
+@media (max-width:900px){
+  .modal_dialog{
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+      flex-direction: column;
+      max-width: 700px;
+      
+  }
+  .mod-col-1{
+    display: none;
+  }
+  .modal_dialog{
+    height: 700px;
+  }
+ 
+}
 
+@media(max-width:375px){
+  .modal_dialog{
+    max-width: 350px;
+  }
+  .offer-input{
+    max-width: 300px;
+  }
+  .offer-button{
+    max-width: 300px;
+  }
+}
+@media(max-width:335px){
+  .modal_title{
+    margin-top: -20px;
+    font-size: 18px;
+    max-width: 250px;
+  }
+  .offer-input{
+    max-width: 270px;
+    padding: 10px;
+    margin-top: -10px;
+  }
+  .m-in-1{
+    margin-top: -20px;
+  }
+  .offer-button{
+    max-width: 270px;
+    height: 40px;
+    margin-top: -20px;
+  }
+  .modal_subtitle{
+    margin-top: -20px;
+    max-width: 250px;
+  }
+   .right_col-bottom{
+     font-size: 15px;
+     margin-top: -40px;
+   }
+   .right_col-text{
+     font-size: 16px;
+   }
+}
+
+// @media(max-width:350px){
+//   .close{
+//     margin-right: 50px;
+//   }
+// }
 // @media (max-width: 730px){
 //   .modal_dialog{
 //     flex-direction: column;
