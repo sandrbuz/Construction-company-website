@@ -883,10 +883,15 @@ input::placeholder {
 .bottom-offer {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
+  display: -moz-box;
+  -webkit-align-items: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-orient: vertical;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -ms-flex-align: center;
+  display: flex;
+  align-items: center;
   margin-top: 50px;
 }
 
@@ -947,8 +952,10 @@ input::placeholder {
     width: 1000px;
   }
   .bottom-offer {
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    -ms-flex-pack: space-between;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
             justify-content: space-between;
   }
 }
@@ -1186,17 +1193,17 @@ input::placeholder {
 .mod-col-2 {
   display: -webkit-box;
   display: -ms-flexbox;
+  display: -moz-box;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
           flex-direction: column;
 }
 
 .modal-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  text-align: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1274,9 +1281,10 @@ input::placeholder {
 
 @media (max-width: 900px) {
   .modal_dialog {
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
             flex-direction: column;
     max-width: 700px;
   }
