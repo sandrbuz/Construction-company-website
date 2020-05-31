@@ -48,18 +48,21 @@ background: tomato;
 
 }
 #modname-error{
+  position: absolute;
   border:none;
   color:red;
   margin: auto;
-  margin-top: -18px;
-  margin-bottom: 15px;
+ bottom:360px;
+ right: 200px;
+  
 }
 #modphone-error{
+  position: absolute;
   border:none;
   color:red;
   margin: auto;
-  margin-top: -35px;
-  margin-bottom: 15px;
+ right: 200px;
+ bottom: 270px;
 }
 
 }
@@ -168,7 +171,12 @@ flex-direction: column;
   .modal_dialog{
     height: 700px;
   }
- 
+  #modname-error.error{
+    bottom: 374px;
+  }
+  #modphone-error.error{
+    bottom: 285px;
+  }
 }
 
 @media(max-width:375px){
@@ -181,46 +189,27 @@ flex-direction: column;
   .offer-button{
     max-width: 300px;
   }
-}
-@media(max-width:335px){
-  .modal_title{
-    margin-top: -20px;
-    font-size: 18px;
-    max-width: 250px;
+  #modphone-error.error{
+    bottom: 280px;
+    left: 20px;
+    width:200px;
   }
-  .offer-input{
-    max-width: 270px;
-    padding: 10px;
-    margin-top: -10px;
+  #modname-error.error{
+    bottom: 370px;
   }
-  .m-in-1{
-    margin-top: -20px;
-  }
-  .offer-button{
-    max-width: 270px;
-    height: 40px;
-    margin-top: -20px;
-  }
-  .modal_subtitle{
-    margin-top: -20px;
-    max-width: 250px;
-  }
-   .right_col-bottom{
-     font-size: 15px;
-     margin-top: -40px;
-   }
-   .right_col-text{
-     font-size: 16px;
-   }
 }
 
-// @media(max-width:350px){
-//   .close{
-//     margin-right: 50px;
-//   }
-// }
-// @media (max-width: 730px){
-//   .modal_dialog{
-//     flex-direction: column;
-//   }
-// }
+
+@media(max-width:334px){
+  #modname-error.error{
+    bottom: 353px;
+  }
+  #modphone-error.error{
+    bottom: 260px;
+    left: -10px;
+  }
+  .modal_subtitle{
+    width: 300px;
+    margin: auto;
+  }
+}

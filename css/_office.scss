@@ -1,0 +1,26 @@
+.off_slide__image{
+    margin: auto;
+}
+.off_slider{
+    max-width: 400px;
+    margin-top: 85px;
+    
+}
+.off_slide__container{
+    max-width: 400px;
+    margin: auto;
+    
+}
+.office_arrows{
+    width: 400px;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    top: 200px;
+}
+.office_bottom{
+    margin-top: 50px;
+    font-size: 20px;
+    @include reg();
+    
+}

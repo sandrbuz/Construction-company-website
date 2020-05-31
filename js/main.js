@@ -14,6 +14,14 @@
 
 // слайдер на чистом JS
 $(document).ready(function () {
+// office slider
+  $('.off_slider').slick({
+    prevArrow: $(".office_arrow__left"),
+    nextArrow: $(".office_arrow__right")
+  });
+
+
+
 $(".sl").slick({
   // infinite: true,
   slidesToShow: 3,
@@ -51,6 +59,9 @@ $(".sl").slick({
     },
   ],
 });
+
+
+
 
 // Библиотека wow.js (for animation)
 new WOW().init();

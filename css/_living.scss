@@ -1,0 +1,50 @@
+.living_img{
+    width: 120px;
+    height:90px ;
+}
+.living_item__price{
+    font-size: 16px;
+    @include reg();
+    margin-left: 30px ;
+}
+.living_container{
+    max-width: 450px;
+    margin: auto;
+}
+.liv_top__item{
+    display: flex;
+    align-items: center;
+    
+}
+.living_top{
+    margin-top: 60px;
+}
+.liv_item__2, .liv_item__3{
+    margin-top: 17px;
+}
+.liv_bottom__title{
+    @include bold();
+    font-size: 14px;
+}
+.liv_bottom__list{
+    font-size: 14px;
+    @include bold();
+}
+.liv_bottom__list{
+    list-style-type: none;
+    margin-top:5px ;
+}
+.liv_bottom__list:before{
+    content: '•';
+    color:#ffd200;
+    content: '•';
+    padding-right: 10px;
+    width: 2px;
+    height: 2px;
+}
+.living_bottom{
+    margin-top: 45px;
+}
+.liv_bottom__title{
+    margin-bottom:20px ;
+}
