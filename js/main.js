@@ -15,11 +15,10 @@
 // слайдер на чистом JS
 $(document).ready(function () {
 // office slider
-  $('.off_slider').slick({
-    prevArrow: $(".office_arrow__left"),
-    nextArrow: $(".office_arrow__right")
+  $('.mod_slider').slick({
+    prevArrow: $(".mod_left__arrow"),
+    nextArrow: $(".mod_right__arrow")
   });
-
 
 
 $(".sl").slick({

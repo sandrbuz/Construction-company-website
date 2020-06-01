@@ -1166,7 +1166,7 @@ input::placeholder {
   border: none;
   color: red;
   margin: auto;
-  bottom: 360px;
+  bottom: 359px;
   right: 200px;
 }
 
@@ -1301,6 +1301,18 @@ input::placeholder {
   }
   #modphone-error.error {
     bottom: 285px;
+  }
+}
+
+@media (max-width: 800px) {
+  .modal-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
@@ -2327,21 +2339,21 @@ input::placeholder {
   margin-bottom: 20px;
 }
 
-.off_slide__image {
+.mod_slide__image {
   margin: auto;
 }
 
-.off_slider {
+.mod_slider {
   max-width: 400px;
   margin-top: 85px;
 }
 
-.off_slide__container {
+.slide__container {
   max-width: 400px;
   margin: auto;
 }
 
-.office_arrows {
+.modal_arrows {
   width: 400px;
   position: absolute;
   display: -webkit-box;

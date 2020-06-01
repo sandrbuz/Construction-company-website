@@ -52,7 +52,7 @@ background: tomato;
   border:none;
   color:red;
   margin: auto;
- bottom:360px;
+ bottom:359px;
  right: 200px;
   
 }
@@ -178,6 +178,13 @@ flex-direction: column;
     bottom: 285px;
   }
 }
+@media (max-width:800px){
+.modal-form{
+  display: flex;
+  flex-direction: column;
+}
+}
+
 
 @media(max-width:375px){
   .modal_dialog{
