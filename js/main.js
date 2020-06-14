@@ -152,6 +152,28 @@ new WOW().init();
 
    });
 
+  //  валидация top form
+  $("#top-form").validate({
+    rules:{
+      topphone: 'required',
+      topname:{
+        required:true,
+        minlength: 2.
+      },
+    },
+      messages: {
+       topname: {
+        required:"Укажите имя",
+        minlength: jQuery.validator.format("Осталось символов: {0}"),
+       },
+       topphone: {
+        required: "Укажите телефон",
+       },
+     },
+  
+  
+     });
+
   // отправка offer формы
   $("#offer-form").on("submit", function (event) {
     event.preventDefault();
@@ -176,7 +198,31 @@ new WOW().init();
 
     
   });
+// отправка top form
 
+$("#top-form").on("submit", function (event) {
+  event.preventDefault();
+
+
+
+
+  $.ajax({
+    url: "topmail.php",
+    type: "POST",
+    data: $(this).serialize(),
+    success: function (data) {
+      $(".success2").html(data + " Ваша заявка отправлена.");
+
+    },
+    error: function (jqXHR, textStatus) {
+      console.log(jqXHR + ": " + textStatus);
+    },
+  });
+
+
+
+  
+});
   // отправка modal формы
   $("#modal-form").on("submit", function (event) {
     event.preventDefault();

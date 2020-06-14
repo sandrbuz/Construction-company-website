@@ -1,10 +1,58 @@
-
-.success1{
+.success2{
   padding: 50px;
   margin: auto;
   @include bold();
   text-align: center;
- margin-top: -50px;
+
+padding-top: 0;
+}
+.topcallback_number{
+  margin: auto;
+  
+  
+}
+.topcallback{
+  padding-top: 50px;
+  margin-top: -100px !important;
+}
+.top-modal{
+ 
+  top: 0;
+  left: 0;
+  position: fixed;
+  background-color: rgba(#000, 0.5);
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.modal_dialog-top{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: auto;
+  background: #ffffff;
+width: 600px;
+ height: 700px;
+}
+.close-top{
+  
+  cursor: pointer;
+  position: absolute;
+  width: 20px;
+  right: 0;
+  
+}
+
+.top-modal{
+  display: none;
+}
+.success1{
+  margin-top: 50px;
+  margin: auto;
+  @include bold();
+  text-align: center;
+
 }
 .modal {
   top: 0;
@@ -29,14 +77,13 @@
   display: -ms-flexbox;
   display: -moz-box;
   display: flex;
-  // align-items: center;
   z-index: 10;
   
 position: relative;
 
   margin: auto;
   width: 1070px;
-  // width: 80%;
+  
   height: 700px;
   background: #ffffff;
   .close{
@@ -52,7 +99,7 @@ background: tomato;
   border:none;
   color:red;
   margin: auto;
- bottom:359px;
+ bottom:347px;
  right: 200px;
   
 }
@@ -62,7 +109,7 @@ background: tomato;
   color:red;
   margin: auto;
  right: 200px;
- bottom: 270px;
+ bottom: 230px;
 }
 
 }
@@ -85,7 +132,8 @@ background: tomato;
   -webkit-flex-direction: column;
   -moz-flex-direction: column;
   -ms-flex-direction: column;
-  display: flex;
+  // display: flex;
+  text-align: center;
 flex-direction: column;
 
 }
@@ -109,13 +157,12 @@ flex-direction: column;
 
 .modal-in{
   width: 370px;
-  // padding: 25px 270px 25px 30px;
-  // margin: 0 auto;
 }
 .m-in-2{
   margin-left: 0;
   margin: auto;
   margin-bottom: 33px;
+  margin-top: 30px;
 }
 .m-in-1{
   margin: auto;
@@ -126,7 +173,6 @@ flex-direction: column;
   text-align: center;
   margin: 0 auto;
   color:  333333;
-  // display: inline-block;
   max-width: 300px;
   font-size: 22px;
   @include bold();
@@ -141,20 +187,36 @@ flex-direction: column;
 }
 
 .right_col-bottom{
-  margin: 0 auto;
+  
+  
+ 
+  margin: 50px  auto 0; 
+
   width: 270px;
   font-size: 15px;
   @include reg();
   text-align: center;
 }
 .right_col-text{
-  padding-bottom: 50px;
-  margin: auto;
   @include bold();
   font-size: 24px;
   max-width: 230px; 
   color: #333333;
   text-decoration: none;
+}
+#topname-error{
+  position: absolute;
+  bottom: 340px;
+  right: 200px;
+  border: none;
+  color: red;
+}
+#topphone-error{
+  position: absolute;
+  bottom: 225px;
+  right: 200px;
+  border: none;
+  color: red;
 }
 @media (max-width:900px){
   .modal_dialog{
@@ -175,7 +237,7 @@ flex-direction: column;
     bottom: 374px;
   }
   #modphone-error.error{
-    bottom: 285px;
+    bottom: 255px;
   }
 }
 @media (max-width:800px){
@@ -184,7 +246,45 @@ flex-direction: column;
   flex-direction: column;
 }
 }
+@media (max-width:600px){
+  #topname-error{
+    bottom: 310px;
+  }
+  #topphone-error{
+bottom: 200px;
+  }
+}
+@media (max-width:380px){
+  .top-form{
+    margin-top: -90px;
+  }
+  .modal_title{
+    margin-top: -50px;
+  }
+  .modal_subtitle{
+    margin-top: -20px;
+  }
+  .topcallback{
+    margin-top: -105px;
+  }
+  
+  .topcallback_number{
+    margin-top: -1px;
+  }
+  #modname-error.error{
+    bottom: 440px;
+  }
+  #modphone-error.error{
+    bottom: 325px;
+  }
+  #topname-error{
+  bottom:440px;
+  }
+  #topphone-error{
+bottom: 325px;
+  }
 
+}
 
 @media(max-width:375px){
   .modal_dialog{
@@ -197,26 +297,39 @@ flex-direction: column;
     max-width: 300px;
   }
   #modphone-error.error{
-    bottom: 280px;
+    bottom: 325px;
     left: 20px;
     width:200px;
   }
   #modname-error.error{
-    bottom: 370px;
+    bottom: 440px;
+  }
+}
+@media(max-width:350px){
+  #topname-error{
+  right: 100px;
+  }
+  #topphone-error{
+    right: 100px;
   }
 }
 
-
 @media(max-width:334px){
   #modname-error.error{
-    bottom: 353px;
+    bottom: 400px;
   }
   #modphone-error.error{
-    bottom: 260px;
+    bottom: 285px;
     left: -10px;
   }
   .modal_subtitle{
     width: 300px;
     margin: auto;
+  }
+  #topname-error{
+  bottom: 370px;
+  }
+  #topphone-error{ 
+    bottom: 250px;
   }
 }

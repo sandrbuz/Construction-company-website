@@ -3,9 +3,12 @@ $(document).ready(function(){
   var modal = $('#modal');
   var close = $('#close');
   var find = $('.find');
+  var tmodal = $('#top-modal');
+  var tclose = $('#close-top');
+
 
   button.on('click',function(){
-      modal.addClass('modal_active');
+      tmodal.addClass('modal_active');
   });
 
 
@@ -20,9 +23,11 @@ $(document).ready(function(){
 
 
 
+  tclose.on('click', function(){
+    tmodal.removeClass('modal_active');
+});
+
   
-
-
 
   close.on('click', function(){
       modal.removeClass('modal_active');
