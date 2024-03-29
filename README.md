@@ -1,5 +1,9 @@
 # Construction company website.
-The main course project of the 'glo academy' online school.
+
+
+https://github.com/sandrbuz/Construction-company-website/assets/58559193/82c40c3d-52e0-41be-a444-48ea8633dea1
+
+
 Advertising site for a construction company. [View site](http://b92533xo.beget.tech/).
 ## Main features
   - There are forms, when they are filled out, an application letter is sent to your e-mail
